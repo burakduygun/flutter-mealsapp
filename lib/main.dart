@@ -6,7 +6,6 @@ import './screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
 import './screens/categories_screen.dart';
 import './screens/meal_detail_screen.dart';
-import 'models/meal.dart';
 import './models/meal.dart';
 
 void main() => runApp(const MyApp());
@@ -121,7 +120,6 @@ class _MyAppState extends State<MyApp> {
             ),
             iconTheme: IconThemeData(color: Color(0xFF2F4F4F))),
       ),
-
       routes: {
         '/': (ctx) => TabsScreen(_favoriteMeals),
         CategoryMealsScreen.routeName: (ctx) =>
